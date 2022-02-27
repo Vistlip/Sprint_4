@@ -1,6 +1,8 @@
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+import io.qameta.allure.junit4.DisplayName;
+
 
 import static org.junit.Assert.*;
 
@@ -33,6 +35,7 @@ public class AccountTest {
     }
 
     @Test
+    @DisplayName("Параметризированный тест")
     public void nameWillBeValid() {
         Account account = new Account(name);
         assertEquals(expected, account.checkNameToEmboss());
