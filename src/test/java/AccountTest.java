@@ -41,6 +41,6 @@ public class AccountTest {
     @DisplayName("Параметризованный тест")
     public void nameWillBeValidTest() {
         Account account = new Account(name);
-        assertEquals("", expected, account.checkNameToEmboss());
+        assertEquals(message, expected, account.checkNameToEmboss());
     }
 }
